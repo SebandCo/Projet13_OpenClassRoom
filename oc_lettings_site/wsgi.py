@@ -1,3 +1,10 @@
+"""
+Module wsgi.py du projet oc_lettings_site
+
+Configure l'interface WSGI pour le projet Django à destination des serveurs compatibles WSGI
+(Web Server Gateway Interface)
+"""
+
 import os
 
 from django.core.wsgi import get_wsgi_application

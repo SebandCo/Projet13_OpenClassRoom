@@ -1,3 +1,20 @@
+"""
+Module settings.py du projet oc_lettings_site.
+
+Ce module définit la configuration globale du projet Django :
+- chemins de base
+- clés de sécurité et options de debug
+- applications installées
+- middlewares
+- configuration des templates
+- base de données
+- validation des mots de passe
+- internationalisation
+- gestion des fichiers statiques
+
+Il est généré automatiquement par Django lors de la création du projet.
+"""
+
 import os
 
 from pathlib import Path
