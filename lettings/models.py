@@ -40,14 +40,14 @@ class Address(models.Model):
 
     class Meta:
         """
-        Métadonnées de Adress.
+        Métadonnées de Address.
 
         Attributes
             verbose_name (str) : Affichage au singulier dans admin
             verbose_name_plural (str) : Affichage au pluriel dans admin
         """
-        verbose_name = "Adress"
-        verbose_name_plural = "Adress"
+        verbose_name = "Address"
+        verbose_name_plural = "Address"
 
 
 class Letting(models.Model):

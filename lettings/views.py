@@ -7,7 +7,7 @@ Il gère :
 - la page de détail d'un letting spécifique
 """
 
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Letting
 
 
@@ -37,7 +37,7 @@ def letting(request, letting_id):
     Returns:
         HttpResponse : Réponse contenant le rendu du templates "lettings/letting.html"
     """
-    letting = Letting.objects.get(id=letting_id)
+    letting = get_object_or_404(Letting, id=letting_id)
     context = {
         'title': letting.title,
         'address': letting.address,

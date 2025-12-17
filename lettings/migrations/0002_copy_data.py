@@ -26,7 +26,11 @@ def copy_data(apps, schema_editor):
         - Récupère les modèles Address et Letting depuis lettings
         - Recrée les relations entre Letting et Address et recrée les liens entre chaque instance
     """
-    # Récupération des anciens modèles depuis oc_lettings_site
+    # Neutralisation de la migration car provoque des erreurs lors des tests
+    # Migration sans interet une fois que les données ont été transféré
+    pass
+    
+    """# Récupération des anciens modèles depuis oc_lettings_site
     Addresse_old = apps.get_model("oc_lettings_site", "Address")
     Letting_old = apps.get_model("oc_lettings_site", "Letting")
 
@@ -53,7 +57,7 @@ def copy_data(apps, schema_editor):
         Letting_new.objects.create(
             title=letting.title,
             address=liste_adress[letting.address.id],
-        )
+        )"""
 
 
 # Définition de la Migration

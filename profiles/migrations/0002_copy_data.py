@@ -25,7 +25,11 @@ def copy_data(apps, schema_editor):
         - Récupère l'ancien modèle Profile contenu dans oc_lettings_site
         - Crée le modèle Profile dans profiles
     """
-    # Récupération des anciens modèles depuis oc_lettings_site
+    # Neutralisation de la migration car provoque des erreurs lors des tests
+    # Migration sans interet une fois que les données ont été transféré
+    pass
+
+    """# Récupération des anciens modèles depuis oc_lettings_site
     Profiles_old = apps.get_model("oc_lettings_site", "Profile")
 
     # Récupération des nouveaux modèles depuis Profile
@@ -38,7 +42,7 @@ def copy_data(apps, schema_editor):
                 favorite_city=profile.favorite_city,
                 user=profile.user,
         )
-        liste_profiles[profile.id] = new_profiles
+        liste_profiles[profile.id] = new_profiles"""
 
 
 # Définition de la Migration

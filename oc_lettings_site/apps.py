@@ -13,5 +13,7 @@ class OCLettingsSiteConfig(AppConfig):
 
     Attributes:
         name (str): Nom de l'application enregistré par Django
+        label (str): Force le nom par défaut de l'application enregistré par Django
     """
     name = 'oc_lettings_site'
+    label = 'oc_lettings_site'
