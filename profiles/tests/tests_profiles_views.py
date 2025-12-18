@@ -28,12 +28,13 @@ def test_profiles_detail(client):
     et contient le titre du Profiles
     """
     user = User.objects.create_user(username="harry", password="secret")
-    profile = Profile.objects.create(user=user, favorite_city="Poudlard")
+    Profile.objects.create(user=user, favorite_city="Poudlard")
 
     url = reverse("profiles:profile", args=[user.username])
     response = client.get(url)
     assert response.status_code == 200
     assert b"harry" in response.content
+    assert b"Poudlard" in response.content
 
 
 @pytest.mark.django_db
