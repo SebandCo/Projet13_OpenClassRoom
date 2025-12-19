@@ -9,6 +9,9 @@ Il gère :
 
 from django.shortcuts import render, get_object_or_404
 from .models import Profile
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def index(request):
@@ -21,6 +24,7 @@ def index(request):
     Returns:
         HttpResponse : Réponse contenant vers le templates "profiles/index.html"
     """
+    logger.info("Affichage de la page index de Profiles")
     profiles_list = Profile.objects.all()
     context = {'profiles_list': profiles_list}
     return render(request, 'profiles/index.html', context)
@@ -38,6 +42,7 @@ def profile(request, username):
         HttpResponse : Réponse contenant le rendu du templates "profiles/profile.html"
         HttpResponse : Réponse page 404 si le profile n'existe pas
     """
+    logger.info(f"Affichage du profil : {username}")
     profile = get_object_or_404(Profile, user__username=username)
     context = {'profile': profile}
     return render(request, 'profiles/profile.html', context)

@@ -9,6 +9,9 @@ Il gère :
 
 from django.shortcuts import render, get_object_or_404
 from .models import Letting
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def index(request):
@@ -21,6 +24,7 @@ def index(request):
     Returns:
         HttpResponse : Réponse contenant vers le templates "lettings/index.html"
     """
+    logger.info("Affichage de la page index de Lettings")
     lettings_list = Letting.objects.all()
     context = {'lettings_list': lettings_list}
     return render(request, 'lettings/index.html', context)
@@ -37,6 +41,7 @@ def letting(request, letting_id):
     Returns:
         HttpResponse : Réponse contenant le rendu du templates "lettings/letting.html"
     """
+    logger.info(f"Affichage du letting id={letting_id}")
     letting = get_object_or_404(Letting, id=letting_id)
     context = {
         'title': letting.title,

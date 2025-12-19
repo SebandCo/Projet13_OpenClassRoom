@@ -32,6 +32,7 @@ urlpatterns = [
     path('profiles/', include("profiles.urls")),
     path('admin/', admin.site.urls),
     path('crash/', views.crash_erreur_500),
+    path('sentry-debug/', views.sentry_debug, name="sentry_debug")
 ]
 
 

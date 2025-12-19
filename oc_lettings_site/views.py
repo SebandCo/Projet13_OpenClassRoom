@@ -8,6 +8,9 @@ Il gère :
 """
 
 from django.shortcuts import render
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def index(request):
@@ -20,6 +23,7 @@ def index(request):
     Returns:
         HttpResponse : Réponse contenant vers le templates "index.html"
     """
+    logger.info("Chargement de la page d'acceuil")
     return render(request, 'index.html')
 
 
@@ -36,3 +40,15 @@ def crash_erreur_500(request):
         Exception: Erreur volontaire pour simuler un crash du serveur (erreur 500)
     """
     raise Exception("Erreur volontaire")
+
+
+def sentry_debug(request):
+    """
+    Déclenche volontairement une erreur pour tester Sentrey
+    Cette vue est uniquement pour tester le retour de Sentry
+
+    Args:
+        request (HttpRequest) : Objet representant la requête HTTP saisie par l'utilisateur
+    """
+    logger.error("Erreur volontaire pour lancer le test Sentry")
+    1 / 0

@@ -1,0 +1,187 @@
+[INFO] 2025-12-19 09:15:49,747 django.utils.autoreload: Watching for file changes with StatReloader
+[ERROR] 2025-12-19 09:15:57,261 django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 23, in index
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+[ERROR] 2025-12-19 09:15:57,310 django.server: "GET / HTTP/1.1" 500 78466
+[WARNING] 2025-12-19 09:15:57,581 django.request: Not Found: /favicon.ico
+[WARNING] 2025-12-19 09:15:57,611 django.server: "GET /favicon.ico HTTP/1.1" 404 2420
+[INFO] 2025-12-19 09:17:42,759 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:17:43,979 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:18:29,773 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\profiles\views.py changed, reloading.
+[INFO] 2025-12-19 09:18:30,869 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:18:38,474 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:18:40,090 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:19:08,299 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:19:09,339 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:21:36,830 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\profiles\views.py changed, reloading.
+[INFO] 2025-12-19 09:21:37,959 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:21:49,211 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\lettings\views.py changed, reloading.
+[INFO] 2025-12-19 09:21:50,798 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:22:24,263 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:22:25,529 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:28:29,606 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:28:31,481 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:28:51,792 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:28:53,018 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:29:41,800 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\urls.py changed, reloading.
+[INFO] 2025-12-19 09:29:43,441 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:30:04,710 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 09:30:05,199 django.server: "GET / HTTP/1.1" 200 3749
+[INFO] 2025-12-19 09:30:13,267 django.server: "GET /sentry-debug HTTP/1.1" 301 0
+[ERROR] 2025-12-19 09:30:13,280 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-19 09:30:13,489 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+[ERROR] 2025-12-19 09:30:13,498 django.server: "GET /sentry-debug/ HTTP/1.1" 500 77944
+[INFO] 2025-12-19 09:34:19,752 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\lettings\views.py changed, reloading.
+[INFO] 2025-12-19 09:34:21,829 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:34:25,797 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:34:27,131 django.utils.autoreload: Watching for file changes with StatReloader
+[ERROR] 2025-12-19 09:34:31,188 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 55, in sentry_debug
+    except division_by_zero:
+UnboundLocalError: local variable 'division_by_zero' referenced before assignment
+[ERROR] 2025-12-19 09:34:31,227 django.server: "GET /sentry-debug/ HTTP/1.1" 500 81882
+[INFO] 2025-12-19 09:37:11,939 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:37:12,967 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-19 09:37:44,477 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
+[INFO] 2025-12-19 09:37:46,487 django.utils.autoreload: Watching for file changes with StatReloader
+[ERROR] 2025-12-19 09:37:51,237 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-19 09:37:51,367 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    1 / 0
+ZeroDivisionError: division by zero
+[ERROR] 2025-12-19 09:37:51,396 django.server: "GET /sentry-debug/ HTTP/1.1" 500 4107
+[INFO] 2025-12-19 09:37:53,782 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 09:37:53,803 django.server: "GET / HTTP/1.1" 200 3749
+[INFO] 2025-12-19 09:37:54,925 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 09:37:54,956 django.server: "GET /profiles/ HTTP/1.1" 200 4748
+[INFO] 2025-12-19 09:39:52,848 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py changed, reloading.
+[INFO] 2025-12-19 09:39:54,202 django.utils.autoreload: Watching for file changes with StatReloader
+[WARNING] 2025-12-19 09:40:12,011 django.request: Not Found: /debug_sentry
+[WARNING] 2025-12-19 09:40:12,077 django.server: "GET /debug_sentry HTTP/1.1" 404 4090
+[WARNING] 2025-12-19 09:40:20,107 django.request: Not Found: /debug-sentry
+[WARNING] 2025-12-19 09:40:20,125 django.server: "GET /debug-sentry HTTP/1.1" 404 4090
+[WARNING] 2025-12-19 09:40:32,322 django.request: Not Found: /sentry_debug
+[WARNING] 2025-12-19 09:40:32,340 django.server: "GET /sentry_debug HTTP/1.1" 404 4090
+[ERROR] 2025-12-19 09:40:37,694 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-19 09:40:37,827 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    1 / 0
+ZeroDivisionError: division by zero
+[ERROR] 2025-12-19 09:40:37,844 django.server: "GET /sentry-debug/ HTTP/1.1" 500 4107
+[INFO] 2025-12-19 11:05:20,476 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 11:05:20,626 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:20,636 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 11:05:20,651 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:20,667 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:20,691 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:20,696 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:20,706 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:20,716 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:20,726 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 11:05:20,766 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:20,786 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 11:05:20,806 lettings.views: Affichage du letting id=9999
+[WARNING] 2025-12-19 11:05:20,806 django.request: Not Found: /lettings/9999/
+[INFO] 2025-12-19 11:05:20,831 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:20,836 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:20,851 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:20,851 lettings.views: Affichage de la page index de Lettings
+[ERROR] 2025-12-19 11:05:20,866 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-19 11:05:21,056 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    1 / 0
+ZeroDivisionError: division by zero
+[INFO] 2025-12-19 11:05:21,281 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 11:05:21,307 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:21,478 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 11:05:21,488 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:21,498 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:21,498 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 11:05:21,518 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:21,518 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 11:05:21,689 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:21,699 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 11:05:21,901 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 11:05:22,061 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 11:05:22,076 profiles.views: Affichage du profil : 9999
+[WARNING] 2025-12-19 11:05:22,081 django.request: Not Found: /profiles/9999/
+[INFO] 2025-12-19 11:05:22,146 oc_lettings_site.views: Chargement de la page d'acceuil
+[ERROR] 2025-12-19 11:05:22,196 django.request: Internal Server Error: /crash/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 42, in crash_erreur_500
+    raise Exception("Erreur volontaire")
+Exception: Erreur volontaire
+[WARNING] 2025-12-19 11:05:22,211 django.request: Not Found: /mauvais_chemin/
