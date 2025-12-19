@@ -10,6 +10,7 @@ Site web d'Orange County Lettings
 - Git CLI
 - SQLite3 CLI
 - Interpréteur Python, version 3.6 ou supérieure
+- Compte Sentry (pour la partie developpement)
 
 Dans le reste de la documentation sur le développement local, il est supposé que la commande `python` de votre OS shell exécute l'interpréteur Python ci-dessus (à moins qu'un environnement virtuel ne soit activé).
 
@@ -32,6 +33,16 @@ Dans le reste de la documentation sur le développement local, il est supposé q
 - Confirmer que la commande `pip` exécute l'exécutable pip dans l'environnement virtuel, `which pip`
 - Pour désactiver l'environnement, `deactivate`
 
+#### Mise en place de Sentry
+Le programme est relié à Sentry pour la journalisation
+Commencé par créez votre compte sur Sentry.io
+Une fois le DSN récupéré
+- Créér un fichier config_sentry.py à la racine du projet
+- Ecrire dans le fichier 
+```
+SENTRY_DSN = "DSN récupéré sur Sentry.io"
+```
+
 #### Exécuter le site
 
 - `cd /path/to/Python-OC-Lettings-FR`
@@ -40,6 +51,7 @@ Dans le reste de la documentation sur le développement local, il est supposé q
 - `python manage.py runserver`
 - Aller sur `http://localhost:8000` dans un navigateur.
 - Confirmer que le site fonctionne et qu'il est possible de naviguer (vous devriez voir plusieurs profils et locations).
+- Il est possible de tester la communication avec Sentry via `http://localhost:8000/sentry-debug/`
 
 #### Linting
 

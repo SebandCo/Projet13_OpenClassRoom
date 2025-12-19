@@ -20,7 +20,6 @@ import os
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 from pathlib import Path
-import config_sentry
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SENTRY_DSN = os.environ.get("SENTRY_DSN")
 
 sentry_sdk.init(
-    dsn=config_sentry.SENTRY_DSN,
+    dsn=os.environ.get("SENTRY_DSN"),
     integrations=[DjangoIntegration()],
     # Permet de suivre toutes les transactions
     traces_sample_rate=1.0,
@@ -65,6 +64,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

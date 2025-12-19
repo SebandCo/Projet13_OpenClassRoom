@@ -185,3 +185,64 @@ Traceback (most recent call last):
     raise Exception("Erreur volontaire")
 Exception: Erreur volontaire
 [WARNING] 2025-12-19 11:05:22,211 django.request: Not Found: /mauvais_chemin/
+[INFO] 2025-12-19 13:46:01,277 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 13:46:01,657 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:01,687 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 13:46:01,692 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:01,721 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:01,737 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:01,752 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:01,757 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:01,772 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:01,777 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 13:46:01,812 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:01,827 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-19 13:46:01,837 lettings.views: Affichage du letting id=9999
+[WARNING] 2025-12-19 13:46:01,867 django.request: Not Found: /lettings/9999/
+[INFO] 2025-12-19 13:46:01,867 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:01,877 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:01,887 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:01,897 lettings.views: Affichage de la page index de Lettings
+[ERROR] 2025-12-19 13:46:01,912 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-19 13:46:02,082 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    1 / 0
+ZeroDivisionError: division by zero
+[INFO] 2025-12-19 13:46:02,257 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 13:46:02,267 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:02,402 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 13:46:02,407 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:02,419 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:02,419 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-19 13:46:02,452 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:02,457 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-19 13:46:02,587 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:02,592 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 13:46:02,737 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-19 13:46:02,877 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-19 13:46:02,887 profiles.views: Affichage du profil : 9999
+[WARNING] 2025-12-19 13:46:02,892 django.request: Not Found: /profiles/9999/
+[INFO] 2025-12-19 13:46:02,957 oc_lettings_site.views: Chargement de la page d'acceuil
+[ERROR] 2025-12-19 13:46:03,017 django.request: Internal Server Error: /crash/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\sentry_sdk\integrations\django\views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 42, in crash_erreur_500
+    raise Exception("Erreur volontaire")
+Exception: Erreur volontaire
+[WARNING] 2025-12-19 13:46:03,027 django.request: Not Found: /mauvais_chemin/
