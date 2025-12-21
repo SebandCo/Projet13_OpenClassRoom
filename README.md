@@ -37,7 +37,7 @@ Dans le reste de la documentation sur le développement local, il est supposé q
 Le programme est relié à Sentry pour la journalisation
 Commencé par créez votre compte sur Sentry.io
 Une fois le DSN récupéré
-- Créér un fichier config_sentry.py à la racine du projet
+- Créér un fichier config_secret.py à la racine du projet
 - Ecrire dans le fichier 
 ```
 SENTRY_DSN = "DSN récupéré sur Sentry.io"
