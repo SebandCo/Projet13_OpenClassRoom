@@ -27,14 +27,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Initialisation de Sentry
 SENTRY_DSN = os.environ.get("SENTRY_DSN")
 
-sentry_sdk.init(
-    dsn=os.environ.get("SENTRY_DSN"),
-    integrations=[DjangoIntegration()],
-    # Permet de suivre toutes les transactions
-    traces_sample_rate=1.0,
-    profiles_sample_rate=1.0,
-    send_default_pii=True
-)
+# Modification du lancement de Sentry pour le lancement de Render
+# Sentry ne s'active que SENTRY_DSN est valide (en production)
+if SENTRY_DSN and SENTRY_DSN.startswith("http"):
+    sentry_sdk.init(
+        dsn=os.environ.get("SENTRY_DSN"),
+        integrations=[DjangoIntegration()],
+        # Permet de suivre toutes les transactions
+        traces_sample_rate=1.0,
+        profiles_sample_rate=1.0,
+        send_default_pii=True
+    )
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
