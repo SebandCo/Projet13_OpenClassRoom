@@ -60,7 +60,10 @@ jobs:
       
       - name: Construction de l'image Docker
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/projet13_openclassroom:${{ github.sha }} .
+          docker build \
+          --build-arg SECRET_KEY="${{ secrets.SECRET_KEY }}" \
+          --build-arg SENTRY_DSN="${{ secrets.SENTRY_DSN }}" \
+          -t ${{ secrets.DOCKERHUB_USERNAME }}/projet13_openclassroom:${{ github.sha }} .
           
       - name: Push de l'image Docker
         run: |

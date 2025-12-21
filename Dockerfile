@@ -20,6 +20,10 @@ RUN pip install --no-cache-dir -r requirements.txt gunicorn whitenoise
 COPY . .
 
 # 6 --> Collecte des fichiers statiques
+ARG SECRET_KEY
+ARG SENTRY_DSN
+ENV SECRET_KEY=${SECRET_KEY}
+ENV SENTRY_DSN=${SENTRY_DSN}
 RUN python manage.py collectstatic --noinput
 
 # 7 --> Exposer le port de communication
