@@ -20,8 +20,8 @@ RUN pip install --no-cache-dir -r requirements.txt gunicorn whitenoise
 COPY . .
 
 # 6 --> Collecte des fichiers statiques
-ARG SECRET_KEY
-ARG SENTRY_DSN
+ARG SECRET_KEY=dummy
+ARG SENTRY_DSN=dummy
 ENV SECRET_KEY=${SECRET_KEY}
 ENV SENTRY_DSN=${SENTRY_DSN}
 RUN python manage.py collectstatic --noinput
