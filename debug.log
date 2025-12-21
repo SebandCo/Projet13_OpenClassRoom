@@ -246,3 +246,8 @@ Traceback (most recent call last):
     raise Exception("Erreur volontaire")
 Exception: Erreur volontaire
 [WARNING] 2025-12-19 13:46:03,027 django.request: Not Found: /mauvais_chemin/
+[INFO] 2025-12-20 22:48:13,759 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-21 10:46:27,181 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
+[INFO] 2025-12-21 10:46:29,429 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-21 10:46:45,301 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
+[INFO] 2025-12-21 10:46:46,388 django.utils.autoreload: Watching for file changes with StatReloader
