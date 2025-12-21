@@ -24,6 +24,7 @@ ARG SECRET_KEY=dummy
 ARG SENTRY_DSN=dummy
 ENV SECRET_KEY=${SECRET_KEY}
 ENV SENTRY_DSN=${SENTRY_DSN}
+ENV DJANGO_SETTINGS_MODULE=oc_lettings_site.settings
 RUN python manage.py collectstatic --noinput
 
 # 7 --> Exposer le port de communication
