@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modèles de données &#8212; Documentation Projet 13 - OpenClassRoom 1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=a12a2fe1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=041d0952"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Interfaces de programmation" href="interfaces.html" />
+    <link rel="prev" title="Technologies utilisées" href="technologies.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="modeles-de-donnees">
+<h1>Modèles de données<a class="headerlink" href="#modeles-de-donnees" title="Lien vers cette rubrique">¶</a></h1>
+<p>La base de données repose sur trois modèles</p>
+<section id="modele-profile">
+<h2>Modèle Profile<a class="headerlink" href="#modele-profile" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">user</span></code>              : <code class="docutils literal notranslate"><span class="pre">OneToOneField(User)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">favorite_city</span></code>     : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=64,</span> <span class="pre">blank=True)</span></code></p></li>
+</ul>
+</section>
+<section id="modele-address">
+<h2>Modèle Address<a class="headerlink" href="#modele-address" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">number</span></code>            : <code class="docutils literal notranslate"><span class="pre">PositiveIntegerField()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">street</span></code>            : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=64)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">city</span></code>              : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=64)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">state</span></code>             : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=2)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zip_code</span></code>          : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=5)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">country_iso_code</span></code>  : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=3)</span></code></p></li>
+</ul>
+</section>
+<section id="modele-letting">
+<h2>Modèle Letting<a class="headerlink" href="#modele-letting" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code>             : <code class="docutils literal notranslate"><span class="pre">CharField(max_length=256)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>           : <code class="docutils literal notranslate"><span class="pre">OneToOneField(Address,</span> <span class="pre">on_delete=models.CASCADE)</span></code></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Projet 13 - OpenClassRoom</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demarrage.html">Démarrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technologies.html">Technologies utilisées</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modèles de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modele-profile">Modèle Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modele-address">Modèle Address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modele-letting">Modèle Letting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interfaces.html">Interfaces de programmation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilisation.html">Guide d’utilisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploiement.html">Déploiement et CI/CD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance et supervision</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="technologies.html" title="Chapitre précédent">Technologies utilisées</a></li>
+      <li>Next: <a href="interfaces.html" title="Chapitre suivant">Interfaces de programmation</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Sébatien M.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/modeles.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

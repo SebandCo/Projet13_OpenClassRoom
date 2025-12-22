@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Interfaces de programmation &#8212; Documentation Projet 13 - OpenClassRoom 1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=a12a2fe1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=041d0952"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Guide d’utilisation" href="utilisation.html" />
+    <link rel="prev" title="Modèles de données" href="modeles.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="interfaces-de-programmation">
+<h1>Interfaces de programmation<a class="headerlink" href="#interfaces-de-programmation" title="Lien vers cette rubrique">¶</a></h1>
+<p>L’application expose les vues Django suivantes :</p>
+<section id="vues-principales">
+<h2>Vues principales<a class="headerlink" href="#vues-principales" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code>                     : page d’accueil</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/profiles/</span></code>            : liste des profils</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/profiles/&lt;username&gt;/</span></code> : détail d’un profil</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/lettings/</span></code>            : liste des locations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/lettings/&lt;id&gt;/</span></code>       : détail d’une location</p></li>
+</ul>
+</section>
+<section id="vues-secondaires">
+<h2>Vues secondaires<a class="headerlink" href="#vues-secondaires" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">crash/</span></code>                : Permet d’afficher la page erreur 500</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sentry-debug/</span></code>         : Permet d’envoyer une erreur à Sentry</p></li>
+</ul>
+</section>
+<section id="format-des-reponses">
+<h2>Format des réponses<a class="headerlink" href="#format-des-reponses" title="Lien vers cette rubrique">¶</a></h2>
+<ul class="simple">
+<li><p>HTML via templates Django</p></li>
+<li><p>Pas d’API REST</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Projet 13 - OpenClassRoom</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demarrage.html">Démarrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technologies.html">Technologies utilisées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modeles.html">Modèles de données</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interfaces de programmation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vues-principales">Vues principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vues-secondaires">Vues secondaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#format-des-reponses">Format des réponses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilisation.html">Guide d’utilisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploiement.html">Déploiement et CI/CD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance et supervision</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="modeles.html" title="Chapitre précédent">Modèles de données</a></li>
+      <li>Next: <a href="utilisation.html" title="Chapitre suivant">Guide d’utilisation</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Sébatien M.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/interfaces.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
