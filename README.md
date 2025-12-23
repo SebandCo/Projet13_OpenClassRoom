@@ -1,15 +1,148 @@
-## Résumé
+# Projet13_OpenClassRoom
+Projet13 d'OpenClassRoom dans le cadre de la formation OpenClassRoom developpeur d'application Python
 
-Site web d'Orange County Lettings
+# Descriptif
+Modernisation, conteneurisation et déploiement d’une application Django existante
+Le projet inclut :
+- refactorisation du code
+- mise en place d’une architecture détaillé
+- intégration d’une CI/CD complète
+- création d’une image Docker reproductible
+- déploiement automatisé sur Render
+- documentation technique publiée sur Read the Docs
 
-## Développement local
+## Table des Matières
+1. [Installation](#Installation)
+2. [Exécution locale](#Exécution-locale)
+3. [Docker](#Docker)
+4. [CI/CD](#CICD)
+5. [Déploiement](#Déploiement)
+6. [Documentation](#Documentation)
+7. [Contribution](#Contribution)
 
-### Prérequis
+# Installation
+
+## Pré-requis
+- Python 3.10  
+- pip  
+- virtualenv  
+- Git  
+- Docker
+
+## Création de l’environnement
+Créer un environnement virtuel :
+```
+$ python -m venv env
+```
+Mettez vous dans l'environnement 
+```
+$ env/Scripts/activate  # Windows
+$ source env/bin/activate   # macOS / Linux
+```
+A l'intérieur de l'environnement installer les packages
+```
+$ pip install -r requirements.txt
+```
+
+# Exécution locale
+
+## Variables d’environnement
+L’application nécessite :
+
+- `SECRET_KEY`  
+- `SENTRY_DSN` (optionnel en local)
+
+A définir dans le fichier config_secret.py à créer à la racine du projet
+
+## Lancer le serveur Django
+```
+python manage.py  runserver
+```
+Aller sur :  
+http://localhost:8000
+
+# Docker
+
+## Construire l’image
+```
+$ docker build -t projet13
+```
+
+## Lancer la conteneurisation
+```
+$ docker run -p 8000:8000 projet13
+```
+L’application est accessible sur :  
+http://localhost:8000
+
+# CI/CD
+
+Une pipeline GitHub Actions est configurée pour :
+
+1. **Tests & Linting**  
+   - pytest  
+   - coverage  
+   - flake8  
+
+2. **Build Docker**  
+   - construction de l’image  
+   - push automatique sur Docker Hub  
+
+3. **Déploiement Render**  
+   - déclenché via webhook  
+   - déploiement automatisé de la dernière image Docker  
+
+# Déploiement
+
+L’application est déployée sur Render :  
+https://projet13-openclassroom.onrender.com
+
+Le service Render utilise :
+- Gunicorn pour le serveur WSGI  
+- Whitenoise pour les fichiers statiques  
+- Variables d’environnement sécurisées  
+- L’image Docker publiée sur Docker Hub  
+
+# Documentation
+
+La documentation technique complète (installation, modèles, API, déploiement, maintenance) est disponible sur Read the Docs :
+
+https://projet13-openclassroom.readthedocs.io
+
+# Contribution
+
+Commençant en programmation Python, je suis preneur :
+1. des détections de bug
+2. des suggestions d'améliorations du code  
+3. des suggestions d'optimisations Docker  
+4. des suggestions d'améliorations de la documentation  
+5. des suggestions d'idées pour enrichir la CI/CD  
+
+
+
+
+
+
+
+
+
+# Démo_en_ligne
+
+Application déployée :
+    https://projet13-openclassroom.onrender.com
+
+Documentation technique :
+    https://projet13-openclassroom.readthedocs.io
+
+Image Docker Hub:
+    https://hub.docker.com/r/sebandco/projet13_openclassroom
+
+
 
 - Compte GitHub avec accès en lecture à ce repository
 - Git CLI
 - SQLite3 CLI
-- Interpréteur Python, version 3.6 ou supérieure
+- Interpréteur Python, version 3.10 ou supérieure
 - Compte Sentry (pour la partie developpement)
 
 Dans le reste de la documentation sur le développement local, il est supposé que la commande `python` de votre OS shell exécute l'interpréteur Python ci-dessus (à moins qu'un environnement virtuel ne soit activé).
@@ -19,7 +152,7 @@ Dans le reste de la documentation sur le développement local, il est supposé q
 #### Cloner le repository
 
 - `cd /path/to/put/project/in`
-- `git clone https://github.com/OpenClassrooms-Student-Center/Python-OC-Lettings-FR.git`
+- `git clone https://github.com/SebandCo/Projet13_OpenClassRoom.git`
 
 #### Créer l'environnement virtuel
 
