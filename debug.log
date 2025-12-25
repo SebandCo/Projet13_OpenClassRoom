@@ -252,3 +252,73 @@ Exception: Erreur volontaire
 [INFO] 2025-12-21 10:46:45,301 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
 [INFO] 2025-12-21 10:46:46,388 django.utils.autoreload: Watching for file changes with StatReloader
 [INFO] 2025-12-21 11:09:50,892 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
+[INFO] 2025-12-25 15:39:58,202 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-25 15:40:41,134 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-25 15:40:51,305 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-25 15:43:09,082 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-12-25 15:43:21,328 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 15:43:21,695 django.server: "GET / HTTP/1.1" 200 3749
+[INFO] 2025-12-25 15:43:21,881 django.server: "GET /static/css/styles.css HTTP/1.1" 200 420295
+[INFO] 2025-12-25 15:43:21,919 django.server: "GET /static/js/scripts.js HTTP/1.1" 200 1992
+[INFO] 2025-12-25 15:43:21,920 django.server: "GET /static/assets/img/logo.png HTTP/1.1" 200 27037
+[INFO] 2025-12-25 15:43:22,015 django.server: "GET /static/assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 200 23200
+[INFO] 2025-12-25 15:43:22,015 django.server: "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[INFO] 2025-12-25 15:43:22,103 django.server: "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[INFO] 2025-12-25 15:46:26,539 django.utils.autoreload: C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\settings.py changed, reloading.
+[INFO] 2025-12-25 16:08:17,510 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-25 16:08:17,713 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:17,760 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-25 16:08:17,760 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:17,807 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:17,822 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:17,869 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:17,869 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:17,916 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:17,916 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-25 16:08:17,979 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:18,010 lettings.views: Affichage du letting id=1
+[INFO] 2025-12-25 16:08:18,057 lettings.views: Affichage du letting id=9999
+[WARNING] 2025-12-25 16:08:18,075 django.request: Not Found: /lettings/9999/
+[INFO] 2025-12-25 16:08:18,121 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:18,121 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:18,168 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:18,168 lettings.views: Affichage de la page index de Lettings
+[ERROR] 2025-12-25 16:08:18,215 oc_lettings_site.views: Erreur volontaire pour lancer le test Sentry
+[ERROR] 2025-12-25 16:08:18,215 django.request: Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 54, in sentry_debug
+    1 / 0
+ZeroDivisionError: division by zero
+[INFO] 2025-12-25 16:08:18,418 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-25 16:08:18,434 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:18,590 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-25 16:08:18,590 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:18,621 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:18,637 lettings.views: Affichage de la page index de Lettings
+[INFO] 2025-12-25 16:08:18,684 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:18,684 oc_lettings_site.views: Chargement de la page d'acceuil
+[INFO] 2025-12-25 16:08:18,840 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:18,840 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-25 16:08:19,004 profiles.views: Affichage de la page index de Profiles
+[INFO] 2025-12-25 16:08:19,160 profiles.views: Affichage du profil : harry
+[INFO] 2025-12-25 16:08:19,207 profiles.views: Affichage du profil : 9999
+[WARNING] 2025-12-25 16:08:19,207 django.request: Not Found: /profiles/9999/
+[INFO] 2025-12-25 16:08:19,308 oc_lettings_site.views: Chargement de la page d'acceuil
+[ERROR] 2025-12-25 16:08:19,362 django.request: Internal Server Error: /crash/
+Traceback (most recent call last):
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sébastien\Documents\Licence Python\Projet_13\Projet13_OpenClassRoom\oc_lettings_site\views.py", line 42, in crash_erreur_500
+    raise Exception("Erreur volontaire")
+Exception: Erreur volontaire
+[WARNING] 2025-12-25 16:08:19,393 django.request: Not Found: /mauvais_chemin/
